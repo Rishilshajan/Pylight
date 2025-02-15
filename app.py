@@ -24,7 +24,7 @@
 #print(character_name +" was a good person.")
 #d = 5.45678
 #print(d)
-#is_Male = True
+#is_Male = True 
 #print(is_Male)
 #me = input()
 #print(me + " World")
@@ -117,7 +117,7 @@
 #print(friends)
 #friends[3] = "Maria"  
 #print(friends[0])
-#print(friends[-1])
+#print(friends[-1:])
 #print(friends[1:]) 
 #print(friends[1:3])
 #print(friends)
@@ -147,10 +147,23 @@
 #print(friends)
 #friends1 = friends.copy()
 #print(friends1)
+# To create a list from scratch in a shortcut method is List Comprehension
+# variable = [expression for item in iterable] ; iterable can be range() or if conditionals
+#num = [x for x in range(10)]
+#print(num)
+#nu = [x + 2 for x in range(5)]
+#print(nu)
+#group = [x for x in friends if x[0] != 'A']
+#print(group)
 
-#Tuples Immutable
-#coordinates = (4,5)
+#Tuples Immutable; Cannot use append function directly to Tuples, But when inside a list it can be appended.
+#coordinates = (4,5,6,7,8,4,5,3)
 #print(coordinates)
+#print(coordinates.count(4))
+#print(len(coordinates))
+#latitude, *rest = coordinates   # *operator is used to split and group a tuple which is left behind.
+#print(latitude)
+#print(*rest)
 #coordinates[1] = 3
 #print(coordinates[0])
 #coord = [(1,2), (2,3)]
@@ -224,6 +237,20 @@
 #else:
     #print("Invalid operation")
 
+#Sets - Unordered Collections; Does not suppport Indexing or Slicing; Mutable
+#guests = {"Mary","Anna","John","Hai"}
+#set1 = {"Hai","Hello","Anna",}
+#print(guests)
+#guests.add("Nate")
+#guests.remove("Mary")
+#print(guests)
+#guests.clear()
+#print(guests)
+#comb = guests.union(set1)
+#print(comb)
+#com = guests.difference(set1)
+#print(com)
+
 #Dictionaries
 '''monthConversions = {
     "Jan": "January",
@@ -241,9 +268,21 @@
 }
 print(monthConversions["Mar"])
 print(monthConversions.get("Dec"))
-me = str(input("Enter the first 3 letters of the month: "))
-print(monthConversions.get(me,"Not a valid key"))
+#me = str(input("Enter the first 3 letters of the month: "))
+#print(monthConversions.get(me,"Not a valid key"))
+info_keys = monthConversions.keys()
+print(info_keys)
+#info_values = monthConversions.values()
+#print(info_values)
+#info = monthConversions.items()
+#print(info)
+#monthConversions.update({"Jul":"july"})
+#print(monthConversions.get("Jul"))
+monthConversions.pop("Jul")
+print(info_keys)
+print("Jul" in monthConversions)
 '''
+
 #While Loop
 #i = 1
 #while i <= 10:
@@ -335,19 +374,40 @@ Hello
 #print("bewicfjbec")
 
 #Try Except
+#SyntaxError - Incorrect Syntax => print("Hello)
+#NameError - Unknown Variable => name = "Anna" print(Surname)
+#IndexError - Indexing out of range => student = ["Anna","Bob"] print(student[10])
+#TypeError - Inappropriate Type => len(5)
+#ValueError - Inappropriate Value => int("Hello")
+#finally will print surely if exception occure or not
+#else will print only if there are no exceptions in try block
+#Custom Exceptions are given by raise   
 #try:
-#   value = 10/0
-#   number = int(input("Enter a number: "))
-#   print(number)
+   #value = 10/0
+   #number = int(input("Enter a number: "))
+   #print(number)
 #except ZeroDivisionError:
- #   print("Divided by zero")    
+#    print("Divided by zero")    
 #except ValueError:
- #   print("Invalid Input")  
+#    print("Invalid Input")  
 #except ZeroDivisionError as err:
- #   print(err)   
+#    print(err)   
+#finally:
+#    print("Save") 
+#product = ["ball","toy"] 
+#try:
+#    choice = product[1]
+#except:
+#    print("Error")   
+#else:
+#    print(choice + " is selected") 
+#rate = 15
+#if rate > 10:
+#    raise ValueError("Enter below 10")          
+
    
 #Reading Files
-#r - read, w - write, r+ - read and write, a - append
+#r - read, w - write, r+ - read and write, a - append 
 #employee_file = open("employ.txt","r") 
 #print(employee_file.readable())
 #print(employee_file.read())
