@@ -12,7 +12,7 @@
 
 # Variables and data types
 #a = 12
-#b = 13
+#b = 13 
 #city = "London"
 #print(a+b)
 #print(city)
@@ -165,12 +165,12 @@
 #print(latitude)
 #print(*rest)
 #coordinates[1] = 3
-#print(coordinates[0])
+#print(coordinates[0]) 
 #coord = [(1,2), (2,3)]
 #print(coord)
 #coord.append((4,5))
 #print(coord)
-#coord.remove((4,5))
+#coord.remove((4,5))   
 #print(coord)
 
 #Functions
@@ -488,6 +488,76 @@ run_test(questions)
 #myChineeseChef = ChineeseChef()
 #myChineeseChef.make_special_dish()
 
+# Functional Programming (Intermediate)
+   #Functions can be assigned to other variables and that variables can call that function body
+#def welcome(name):
+#    return "Welcome " + name
+#greet = welcome
+#print(greet("John"))
+   #Higher Order Function - A function as an argument for another function
+#def book_title(title):
+#    return "Book Title: " + title
+#def book(title,func):
+#    return book_title(title)
+#print(book("Bazooka",book_title))
+   #Pure Function - A function giving same result for same input
+#def total(price,count):
+#    return price * count
+#print(total(2,4)) 
+   #Lambda Functions(Anonymous) -Functions without a name on a single line easy to use and create for a simple task 
+#greet = lambda name: "Welcome " + name
+#print(greet("John"))   
+   #map function - Applies a specified function on every element in an iterable
+   #filter function - Returns result based on a specific condition
+#score = [85,50,34]
+#def is_passing(score):
+#    return score >= 55
+#status = list(map(is_passing,score))   
+#print(status)  
+#a = list(filter( lambda score: score> 80, score))
+#print(a)
+   # *args - Any no. of arguments without creating a list before calling a function each time / Receives as Tuple
+   # **kwargs - Recives in the form of dictionary as key value pair
+   # def function_name(normal arguments, *args, **kwargs)
+#def total(*args):
+#    result = 0
+#    for i in args:  
+#        result += i
+#    return result
+#print(total(1,2,3,4,5,66,7))  
+#def tot(**kwargs):
+#    for i, j in kwargs.items():  
+#        print(i, ":", j)
+#tot(name="Alice", age=12) 
+   #Decorators - A function(1) displaying a message. This message is taken by another function(2) as argument and performs an operation. This function(2) is called Decorators.
+#def uppercase(func):  # Fixed function name
+#    def wrapper():
+#        print("Lights On")  # Fixed print statement
+#        msg = func()
+#        return msg.upper()  # Convert message to uppercase
+#    return wrapper
+#@uppercase  # Fixed decorator name
+#def greet():
+#    return "hello, world"
+#print(greet())  # Calling the decorated function
+
+#OOP - Object Oriented Programming - Polymorphism, Abstraction, Inheritance
+#Blueprint = Class - Abstraction of Car
+#Instances = Oject - A Green car
+#To add attributes to a class
+#Defining functions inside a class is called Methods
+# class Car:
+#     def __init__(self,brand,color):
+#         self.brand = brand
+#         self.color = color
+#     def honk(self):
+#         print("Beeep")    
+# myCar = Car("Audi","Q5")
+# print(myCar.color)  
+# print(myCar.honk()) 
+# For Mpre details refer ChineeseChef.py 
+
+
 #Python Interpreter
 #Python is an interpreted language, which means that the source code is executed line by line. This
 #is in contrast to a compiled language, where the source code is converted to machine code all at
@@ -603,6 +673,7 @@ ll.delete_with_value(2)
 # Printing the linked list again
 ll.print_list()  # Output: 0 -> 1 -> 3 -> None
 '''
+''' 
 class Stack():
     def __init__(self):
         self.my_stack = []
@@ -667,5 +738,6 @@ while i < 5:
     if i == 3:
         break
 else:
-    print(0)   
+    print(0) 
+'''     
     

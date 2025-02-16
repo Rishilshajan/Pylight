@@ -2,7 +2,7 @@
 
 **Welcome to PyLight!** A beginner-friendly Python tutorial designed to make coding simple, clear, and fun. Whether you're just starting out or need a refresher, PyLight will guide you step by step.  
 
-🔹 **600+ lines of Python code** – fully commented for easy understanding.  
+🔹 **700+ lines of Python code** – fully commented for easy understanding.  
 🔹 **Learn fundamental concepts** with structured explanations.  
 🔹 **Practical examples & best practices** to boost your skills.  
 
