@@ -7,7 +7,7 @@ class ChineeseChef(Chef): #Example of Child Class inheriting properties from Par
 
 #SuperClass/ Parentclass - The class from which properties are inherited
 #Subclass/ Childclass - The class which inherits the properties
-# If we want to inherit attributes from parent class and also add some attributes to child class use super().init() to inherit from parent class and init() in child class        
+# If we want to inherit attributes from parent class and also add some attributes to child class use super().__init__() to inherit from parent class and init() in child class        
 # class Person:
 #     def __init__(self,name,age):
 #         self.name = name
@@ -15,12 +15,12 @@ class ChineeseChef(Chef): #Example of Child Class inheriting properties from Par
 # per = Person("John",23)
 # print(per.name)
 # class Student(Person):
-#     def __init__(self,name,age,faculty):
+#     def __init__(self,name,age,faculty): 
 #         super().__init__(name,age)
 #         self.faculty = faculty
 # stu = Student("John",23,"CS")   
 # print(stu.faculty)     
-#Method overriding - Method with same name but with different operations
+#Method overriding - Method with same name in parent and child class; When called method in child class overrides the method in the parent class
 
 #Data Hiding - Protect certain class attributes and methods
 #First Level is (self._age = age) Underscore after dot notation

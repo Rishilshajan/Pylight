@@ -9,12 +9,12 @@
 #print("  / |") 
 #print(" /  |")
 #print("/___|")
-
+ 
 # Variables and data types
 #a = 12
 #b = 13 
 #city = "London"
-#print(a+b)
+#print(a+b) 
 #print(city)
 #character_name = "Jo"
 #character_age = "25"
@@ -30,7 +30,8 @@
 #print(me + " World")
 #a = "4"
 #print(a)
-#print(type(a))
+#print(type(a)) 
+
 #z = int(a)
 #print(z)
 #print(type(z))
@@ -183,7 +184,7 @@
 #def say_hi(name,age):
  #   print("Hello "+ name)
   #  print("You are "+ str(age) + " years old")
-#say_hi("Amina",21)
+#say_hi("Amy",21)
 #say_hi("Mike",22)
 #say_hi("Steph",24)
 
@@ -222,7 +223,7 @@
 #print("Maximum number is " + str(max_num(30,4,5)) )  
 
 #Advanced Calculator
-#num1 = float(input("Enter the first number: "))
+#num1 = float(input("Enter the first number: "))  
 #num2 = float(input("Enter the second number: "))
 #print("The operations are +, -, *, /")
 #op = input("Enter the operation: ")
@@ -237,7 +238,7 @@
 #else:
     #print("Invalid operation")
 
-#Sets - Unordered Collections; Does not suppport Indexing or Slicing; Mutable
+#Sets - Unordered Collections; Does not suppport Indexing or Slicing; Mutable; Unique Values
 #guests = {"Mary","Anna","John","Hai"}
 #set1 = {"Hai","Hello","Anna",}
 #print(guests)
@@ -371,7 +372,6 @@ print(translate(input("Enter a phrase: ")))
 '''
 Hello
 '''
-#print("bewicfjbec")
 
 #Try Except
 #SyntaxError - Incorrect Syntax => print("Hello)
@@ -428,7 +428,6 @@ Hello
 #employee_file = open("employ.txt","w")
 #employee_file.write("\nKelly - Customer Service")
 #employee_file.close()
-#employee_file = open("employ1.txt","w")
 #employee_file = open("index.html","w")
 #employee_file.write("<p>This is HTML</p>")
 #employee_file.close()
@@ -555,61 +554,60 @@ run_test(questions)
 # myCar = Car("Audi","Q5")
 # print(myCar.color)  
 # print(myCar.honk()) 
-# For Mpre details refer ChineeseChef.py 
+# For More details refer ChineeseChef.py 
 
 
 #Python Interpreter
-#Python is an interpreted language, which means that the source code is executed line by line. This
-#is in contrast to a compiled language, where the source code is converted to machine code all at
-#once. Python is a dynamically typed language, which means that the type of a variable is determined
-#at runtime. This is in contrast to a statically typed language, where the type of a variable
-#is determined at compile time. Python is also an object-oriented language, which means that it
-#supports the creation of objects with attributes and methods. This is in contrast to a procedural
-#language, where the focus is on the execution of procedures. Python is also a high-level language
-#, which means that it is designed to be easy to read and write. This is in contrast to
-#low-level languages, which are designed to be close to the hardware and are more difficult to read
-#and write. Python is also a general-purpose language, which means that it can be used for
-#a wide variety of tasks. This is in contrast to a specialized language, which is designed for
-#one specific task. Python is also a scripting language, which means that it is designed to be
-#used interactively. This is in contrast to a compiled language, where the source code is
-#compiled into machine code all at once. Python is also a dynamically typed language, which means that
-#the type of a variable is determined at runtime. This is in contrast to a statically typed language
-#, where the type of a variable is determined at compile time. Python is also an object-oriented
-#language, which means that it supports the creation of objects with attributes and methods. This is in
-#contrast to a procedural language, where the focus is on the execution of procedures. Python is also
-#a high-level language, which means that it is designed to be easy to read and write. This
-#is in contrast to low-level languages, which are designed to be close to the hardware and are
-#more difficult to read and write. Python is also a general-purpose language, which means that it
-#can be used for a wide variety of tasks. This is in contrast to a specialized language,
-#which is designed for one specific task. Python is also a scripting language, which means that it
-#is designed to be used interactively. This is in contrast to a compiled language, where the
-#source code is compiled into machine code all at once. Python is also a dynamically typed language,
 '''
-class Solution:
-    def listPrimes(self, n: int):
-        if n <= 2:
-            return 'No prime Number'  # Return an empty list if there are no primes
+Python is an interpreted language, which means that the source code is executed line by line. 
+This is in contrast to a compiled language, where the source code is converted to machine code all at once.
 
-        # Create a boolean list to keep track of prime numbers
-        is_prime = [True] * n
-        is_prime[0] = is_prime[1] = False  # 0 and 1 are not primes
+Python is a dynamically typed language, which means that the type of a variable is determined at runtime. 
+This is in contrast to a statically typed language, where the type of a variable is determined at compile time. 
 
-        # Sieve of Eratosthenes
-        for i in range(2, int(n**0.5) + 1):
-            if is_prime[i]:
-                for j in range(i * i, n, i):
-                    is_prime[j] = False
+Python is also an object-oriented language, which means that it supports the creation of objects with attributes and methods.
+This is in contrast to a procedural language, where the focus is on the execution of procedures.
+
+Python is also a high-level language, which means that it is designed to be easy to read and write. 
+This is in contrast to low-level languages, which are designed to be close to the hardware and are more difficult to read and write. 
+
+Python is also a general-purpose language, which means that it can be used for a wide variety of tasks. 
+This is in contrast to a specialized language, which is designed for one specific task. 
+
+Python is also a scripting language, which means that it is designed to be used interactively.
+This is in contrast to a compiled language, where the source code is compiled into machine code all at once.
+'''
+
+
+#Detect Prime Numbers
+
+# class Solution:
+#     def listPrimes(self, n: int):
+#         if n <= 2:
+#             return 'No prime Number'  # Return an empty list if there are no primes
+
+#         # Create a boolean list to keep track of prime numbers
+#         is_prime = [True] * n
+#         is_prime[0] = is_prime[1] = False  # 0 and 1 are not primes
+
+#         # Sieve of Eratosthenes
+#         for i in range(2, int(n**0.5) + 1):
+#             if is_prime[i]:
+#                 for j in range(i * i, n, i):
+#                     is_prime[j] = False
         
-        # Collect and return the list of prime numbers
-        primes = [i for i, prime in enumerate(is_prime) if prime]
-        return primes
+#         # Collect and return the list of prime numbers
+#         primes = [i for i, prime in enumerate(is_prime) if prime]
+#         return primes
 
-# Example usage
-n = 2
-solution = Solution()
-print(solution.listPrimes(n))
+# # Example usage
+# n = 89
+# solution = Solution()
+# print(solution.listPrimes(n))
+
 '''
-'''
+#Linked List
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -674,6 +672,7 @@ ll.delete_with_value(2)
 ll.print_list()  # Output: 0 -> 1 -> 3 -> None
 '''
 ''' 
+#Stack
 class Stack():
     def __init__(self):
         self.my_stack = []
