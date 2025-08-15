@@ -113,7 +113,7 @@
 #print(plural_noun + " are Blue")
 #print("I love " + celebrity)
 
-#Lists Mutable
+#List is a versatile, ordered, and mutable collection of items
 #friends = ["Sam","Kevin","Ryan",2,False]
 #print(friends)
 #friends[3] = "Maria"  
@@ -157,16 +157,16 @@
 #group = [x for x in friends if x[0] != 'A']
 #print(group)
 
-#Tuples Immutable; Cannot use append function directly to Tuples, But when inside a list it can be appended.
+#A Tuple in Python is an ordered and immutable collection data type, designed to store a fixed sequence of items.
 #coordinates = (4,5,6,7,8,4,5,3)
 #print(coordinates)
 #print(coordinates.count(4))
 #print(len(coordinates))
 #latitude, *rest = coordinates   # *operator is used to split and group a tuple which is left behind.
-#print(latitude)
-#print(*rest)
-#coordinates[1] = 3
-#print(coordinates[0]) 
+#print(latitude)                 #*rest is the "starred expression" or "unpacking operator."  
+#print(*rest)                    #It collects all the remaining elements from the coordinates tuple into a new list named rest
+#print(coordinates[0])         
+#coordinates[1] = 
 #coord = [(1,2), (2,3)]
 #print(coord)
 #coord.append((4,5))
@@ -252,7 +252,7 @@
 #com = guests.difference(set1)
 #print(com)
 
-#Dictionaries
+#Dictionaries - A dictionary in Python is a mutable, unordered collection data type that stores data in key-value pairs.
 '''monthConversions = {
     "Jan": "January",
     "Feb": "February",
@@ -436,6 +436,7 @@ Hello
 #import useful_tool
 #print(useful_tool.roll_dice(10))
 
+
 #Classes and Objects
 #from student import Student
 #student1 = Student("Jim", "Business", 3.1, False)
@@ -451,6 +452,7 @@ Hello
 #student2 = Student("Kelly", "Honors",9.0, True)
 #print(student1.on_honor_roll())
 #print(student2.on_honor_roll())
+#print(student1)
  
 
 #Building A Mutilple Choice Quiz
@@ -605,138 +607,3 @@ This is in contrast to a compiled language, where the source code is compiled in
 # solution = Solution()
 # print(solution.listPrimes(n))
 
-'''
-#Linked List
-
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
-
-class LinkedList:
-    def __init__(self):
-        self.head = None
-
-    def append(self, data):
-        new_node = Node(data)
-        if self.head is None:
-            self.head = new_node
-            return
-        last_node = self.head 
-        while last_node.next:
-            last_node = last_node.next
-        last_node.next = new_node
-
-    def prepend(self, data):
-        new_node = Node(data)
-        new_node.next = self.head
-        self.head = new_node
-
-    def delete_with_value(self, data):
-        if self.head is None:
-            return
-        if self.head.data == data:
-            self.head = self.head.next
-            return
-        current_node = self.head
-        while current_node.next and current_node.next.data != data:
-            current_node = current_node.next
-        if current_node.next:
-            current_node.next = current_node.next.next
-
-    def print_list(self):
-        current_node = self.head
-        while current_node:
-            print(current_node.data, end=' -> ')
-            current_node = current_node.next
-        print('None')
-
-# Creating a linked list and performing operations
-ll = LinkedList()
-
-# Appending elements
-ll.append(1)
-ll.append(2)
-ll.append(3)
-
-# Prepending an element
-ll.prepend(0)
-
-# Printing the linked list
-ll.print_list()  # Output: 0 -> 1 -> 2 -> 3 -> None
-
-# Deleting an element
-ll.delete_with_value(2)
-
-# Printing the linked list again
-ll.print_list()  # Output: 0 -> 1 -> 3 -> None
-'''
-''' 
-#Stack
-class Stack():
-    def __init__(self):
-        self.my_stack = []
-        self.head = -1
-        self.opr_limit = 100
-        self.bottow_el = None
-        self.size = 0
-        
-    def stack(self, val):
-        self.my_stack.append(val)
-        self.head += 1
-        self.size += 1
-        if self.head == 0:
-            self.bottow_el = val
-            
-    def unstack(self):
-        val = self.my_stack[self.head]
-        del self.my_stack[self.head]
-        self.head -= 1
-        self.size -= 1
-        if self.head < 0:
-            self.bottow_el = None
-        
-        return val
-        
-    def get_bottow(self):
-        return self.bottow_el
-        
-    def get_top(self):
-        return self.my_stack[self.head]
-        
-    def tostr(self):
-        return (self.my_stack)
-        
-n_queries = int(input())
-stack_1 = Stack()
-stack_2 = Stack()
-
-for e in range(n_queries):
-    query_s = str(input()).split()
-    
-    if query_s[0] == "1":
-        stack_1.stack(int(query_s[1]))
-        
-    elif query_s[0] == "2":
-        if stack_2.size > 0:
-            stack_2.unstack()
-        else:
-            for e in range(stack_1.size):
-                stack_2.stack(stack_1.unstack())
-            stack_2.unstack()
-    else:
-        if stack_2.size > 0:
-            print(stack_2.get_top())
-            
-        else:
-            print(stack_1.get_bottow())    
-i = 0
-while i < 5:
-    print(i)
-    i += 1
-    if i == 3:
-        break
-else:
-    print(0) 
-'''     
-    
