@@ -289,7 +289,35 @@ print("Jul" in monthConversions)
 #while i <= 10:
 #   print(i)
 #   i += 1 #i=i+1
-#print("End of loop")    
+#print("End of loop")   
+
+#Match Case - Similiar to Switch Cases in other programming languages
+# day = int(input("Enter a day: "))
+# match day:
+#   case 1:
+#     print("Monday")
+#   case 2:
+#     print("Tuesday")
+#   case 3:
+#     print("Wednesday")
+#   case 4:
+#     print("Thursday")
+#   case 5:
+#     print("Friday")
+#   case 6:
+#     print("Saturday")
+#   case 7:
+#     print("Sunday")
+#   case _:                 # "_" is the default case 
+#     print("Enter a day between 1 and 7")  
+#For combining cases we can use "|"
+# day = 4
+# match day:
+#   case 1 | 2 | 3 | 4 | 5:
+#     print("Today is a weekday")
+#   case 6 | 7:
+#     print("I love weekends!")
+
 
 #BUilding a Guessing Game
 #secret_word = 'giraffe'
@@ -431,6 +459,7 @@ Hello
 #employee_file = open("index.html","w")
 #employee_file.write("<p>This is HTML</p>")
 #employee_file.close()
+
 
 #Modules and Pip
 #import useful_tool
@@ -595,7 +624,7 @@ This is in contrast to a compiled language, where the source code is compiled in
 #         # Sieve of Eratosthenes
 #         for i in range(2, int(n**0.5) + 1):
 #             if is_prime[i]:
-#                 for j in range(i * i, n, i):
+#                 for j in range(i * i, n, i): 
 #                     is_prime[j] = False
         
 #         # Collect and return the list of prime numbers
