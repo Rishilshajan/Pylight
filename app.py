@@ -1,4 +1,4 @@
- # Basic code
+# Basic code
 #print("Hello World")
 #print("50 + 10")
 #print(50)
@@ -252,7 +252,7 @@
 #com = guests.difference(set1)
 #print(com)
 
-#Dictionaries - A dictionary in Python is a mutable, unordered collection data type that stores data in key-value pairs.
+#Dictionaries - A dictionary in Python is a mutable, ordered collection data type that stores data in key-value pairs.(From 3.7 versions of Python, it is ordered)
 '''monthConversions = {
     "Jan": "January",
     "Feb": "February",
@@ -292,7 +292,7 @@ print("Jul" in monthConversions)
 #print("End of loop")   
 
 #Match Case - Similiar to Switch Cases in other programming languages
-# day = int(input("Enter a day: "))
+# day = int(input("Enter a day: ")) 
 # match day:
 #   case 1:
 #     print("Monday")
