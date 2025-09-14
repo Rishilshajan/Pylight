@@ -1,5 +1,3 @@
-Here's an updated `README.md` that incorporates the details about your files, making it even more informative for new users:
-
 # 🌟 PyLight | Brightening Your Python Journey 🚀
 
 **Welcome to PyLight!** A beginner-friendly Python tutorial designed to make coding simple, clear, and fun. Whether you're just starting out or need a refresher, PyLight will guide you step by step.
